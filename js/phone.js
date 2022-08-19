@@ -21,11 +21,13 @@ function updatePhonePrice(newPhoneNumber) {
   phoneTotalElement.innerText = phoneTotalPrice;
 }
 
-document.getElementById("btn-phone-plus").addEventListener("click", function () {
-  const newPhoneNumber = updatePhoneNumebr(true);
-  updatePhonePrice(newPhoneNumber);
-  totalCount();
-});
+document
+  .getElementById("btn-phone-plus")
+  .addEventListener("click", function () {
+    const newPhoneNumber = updatePhoneNumebr(true);
+    updatePhonePrice(newPhoneNumber);
+    totalCount();
+  });
 
 document
   .getElementById("btn-phone-minus")
